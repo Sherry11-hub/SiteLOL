@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Do You Love Your Girlfriend?</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #fff0f5;
+      color: #2d2d2d;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    h1 {
+      font-size: 4rem;
+      text-align: center;
+      margin-bottom: 40px;
+      line-height: 1.2;
+    }
+
+    .button-container {
+      display: flex;
+      gap: 20px;
+    }
+
+    button {
+      padding: 16px 40px;
+      font-size: 1.2rem;
+      font-weight: bold;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    button.yes {
+      background: linear-gradient(135deg, #ff69b4, #ffb6c1);
+      color: white;
+      box-shadow: 0 4px 12px rgba(255, 105, 180, 0.4);
+    }
+
+    button.no {
+      background: #fce4ec;
+      color: #d81b60;
+      box-shadow: 0 4px 12px rgba(220, 20, 60, 0.1);
+    }
+
+    button:hover {
+      transform: scale(1.05);
+    }
+
+    button:active {
+      transform: scale(0.98);
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2.5rem;
+        padding: 0 20px;
+      }
+
+      button {
+        padding: 12px 30px;
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Do you love<br>your girlfriend?</h1>
+
+  <div class="button-container">
+    <button class="yes" onclick="window.location.href='no-you-dont.html'">Yes</button>
+    <button class="no" onclick="window.location.href='i-knew-it.html'">No</button>
+  </div>
+
+</body>
+</html>
